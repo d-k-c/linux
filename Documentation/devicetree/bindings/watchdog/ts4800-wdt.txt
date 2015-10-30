@@ -1,0 +1,12 @@
+Technologic Systems Watchdog
+
+Required properties:
+- compatible: must be "technologic,ts4800-wdt"
+- reg: address of the watchdog register from syscon base
+
+Example:
+
+wdt1: wdt@b0010000 {
+	compatible = "technologic,ts4800-wdt";
+	reg = <0xe>;
+};
